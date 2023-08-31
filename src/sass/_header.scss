@@ -1,0 +1,15 @@
+main {
+  @include flex(center, flex-start);
+
+  > section {
+    width: 50%;
+  }
+}
+
+header {
+  @include flex(space-between, center);
+  padding: 20px 40px;
+  background-color: #4a4246;
+  color: #fff;
+  font-family: $primaryFont;
+}

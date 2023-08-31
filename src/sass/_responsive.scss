@@ -1,0 +1,107 @@
+@include mediaLarge {
+  body {
+    overflow: auto !important;
+  }
+
+  main {
+    flex-direction: column-reverse;
+
+    > section {
+      width: 100%;
+    }
+  }
+
+  .singlePlace {
+    width: 50%;
+  }
+
+  .placeInfo .places {
+    height: auto;
+  }
+}
+
+@include mediaMediumLarge {
+  header {
+    padding: 20px 20px;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+
+  .singlePlace {
+    width: 90%;
+  }
+}
+
+@include mediaMedium {
+  header {
+    padding: 20px 10px;
+
+    h1 {
+      font-size: 1.2rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+  }
+}
+
+@include mediaMediumLow {
+  header {
+    flex-direction: column;
+
+    h1 {
+      font-size: 2rem;
+      padding-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      padding: 5px 0;
+    }
+  }
+}
+
+@include mediaSmall {
+  header {
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+
+  .placeInfo .filters div {
+    @include flex(space-between, center);
+    padding-top: 15px;
+  }
+
+  .singlePlace {
+    width: 100%;
+
+    .ranking {
+      h5 {
+        width: 60%;
+        text-align: right;
+      }
+    }
+
+    > div {
+      @include flex(space-between, flex-start);
+
+      &.awards h4 {
+        font-size: 0.9rem;
+        width: 80%;
+        text-align: right;
+      }
+    }
+
+    button {
+      padding: 15px 20px;
+    }
+  }
+}

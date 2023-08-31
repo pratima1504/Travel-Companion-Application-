@@ -1,0 +1,25 @@
+.leaflet-container {
+  width: 100%;
+  height: 90vh;
+}
+
+.markerIcon {
+  > div {
+    background-color: #fff;
+    padding: 20px 20px 10px;
+    @include flex(space-between, flex-start);
+    flex-direction: column;
+    font-family: $primaryFont;
+    height: fit-content;
+    width: 200px;
+
+    img {
+      height: 80%;
+      width: 100%;
+    }
+  }
+}
+
+.star-ratings {
+  margin-top: 0.5rem;
+}
